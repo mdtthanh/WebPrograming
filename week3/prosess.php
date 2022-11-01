@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['img'])) {
+if (!isset($_POST['img'])) {
     copy($_FILES['img']['tmp_name'], './assets/img/' . $_FILES['img']['name']);
 }
 ?>
@@ -35,7 +35,7 @@ if (isset($_POST['img'])) {
 
 <body>
     <div class="background"></div>
-    <table align="center" border="5" width="75%" cellspacing="0">
+    <table style="opacity: 0.7; background-color: #010101;" align="center" border="5" width="75%" cellspacing="0">
         <caption><strong>INFORMATION</strong></caption>
         <tr height="200">
             <th align="left" valign="top" colspan="2">Personal Details

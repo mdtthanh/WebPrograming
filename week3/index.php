@@ -20,7 +20,7 @@
         <div class="wrap">
             <h2>Form contact!</h2>
             <form action="prosess.php" enctype="multipart/form-data" method="POST">
-                <table>
+                <table >
                     <tr>
                         <td>
                             <span>First Name</span>

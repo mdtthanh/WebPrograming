@@ -35,14 +35,17 @@ h2 {
   transform: translate(-50%, -50%);
   position: absolute;
   border-radius: 10px;
+  
 }
 
 .wrap {
   margin: 20px 50px 30px 50px;
+
 }
 
 table {
   margin: auto;
+
 }
 table td {
   /* border: 1px solid rgb(40, 39, 39); */
@@ -81,7 +84,7 @@ input {
   float: right;
   padding: 6px 12px;
   border-radius: 5px;
-  margin: 10px 8px 20px ;
+  margin: 10px 8px 20px;
   cursor: pointer;
 }
 
