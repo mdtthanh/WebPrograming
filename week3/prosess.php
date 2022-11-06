@@ -1,5 +1,5 @@
 <?php
-if (!isset($_POST['img'])) {
+if (isset($_FILES['img'])) {
     copy($_FILES['img']['tmp_name'], './assets/img/' . $_FILES['img']['name']);
 }
 ?>
