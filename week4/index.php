@@ -136,8 +136,15 @@
                         </td>
                     </tr>
                 </table>
+                <?php
+                function resetAll()
+                {
+                    reset($_POST);
+                    echo "<script> function reloadPage() {location.reload(); } </script>";
+                }
+                ?>
 
-                <button class="btn" onclick="reset()">Reset</button>
+                <input class="btn" type="reset" onclick="window.location.reload()">Reset</input>
                 <button class="btn">Submit</button>
             </form>
         </div>
