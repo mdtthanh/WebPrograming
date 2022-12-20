@@ -139,9 +139,9 @@
 
   <form action="" method="post">
     <input type="hidden" name="submitted" value="1">
-    <input type="text" class="cat-id" name="Category_ID" placeholder="Category id" value="<?= @$_POST['Category_ID'] ?>">
-    <input type="text" class="title" name="Title" placeholder="Title" value="<?= @$_POST['Title'] ?>">
-    <input type="text" class="desc" name="Description" placeholder="Description" value="<?= @$_POST['Description'] ?>">
+    <input type="text" class="cat-id" name="Category_ID" placeholder="Category id" value="<?= @ htmlentities($_POST['Category_ID']) ?>">
+    <input type="text" class="title" name="Title" placeholder="Title" value="<?= @htmlentities($_POST['Title']) ?>">
+    <input type="text" class="desc" name="Description" placeholder="Description" value="<?= @htmlentities($_POST['Description']) ?>">
     <p><button type="submit">Add Category</button></p>
   </form>
 </body>

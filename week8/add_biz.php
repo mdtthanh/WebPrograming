@@ -92,27 +92,27 @@
       <input type="hidden" name="submitted" value="1">
       <div class="input-box">
         <label>Business Name</label>
-        <input type="text" name="Name" placeholder="Ex: ABC Academy" value="<?= @ $_POST['Name'] ?>">
+        <input type="text" name="Name" placeholder="Ex: ABC Academy" value="<?= @ htmlentities($_POST['Name']) ?>">
       </div>
 
       <div class="input-box">
         <label>Address</label>
-        <input type="text" name="Address" placeholder="Ex: 123 Any Street" value="<?= @ $_POST['Address'] ?>">
+        <input type="text" name="Address" placeholder="Ex: 123 Any Street" value="<?= @ htmlentities($_POST['Address']) ?>">
       </div>
 
       <div class="input-box">
         <label>City</label>
-        <input type="text" name="City" placeholder="Ex: New York" value="<?= @ $_POST['City'] ?>">
+        <input type="text" name="City" placeholder="Ex: New York" value="<?= @ htmlentities($_POST['City']) ?>">
       </div>
 
       <div class="input-box">
         <label>Telephone</label>
-        <input type="tel" name="Telephone" placeholder="Ex: (555) 123-4567" value="<?= @ $_POST['Telephone'] ?>">
+        <input type="tel" name="Telephone" placeholder="Ex: (555) 123-4567" value="<?= @ htmlentities($_POST['Telephone']) ?>">
       </div>
 
       <div class="input-box">
         <label>URL</label>
-        <input type="url" name="URL" placeholder="Ex: https://www.google.com" value="<?= @ $_POST['URL'] ?>">
+        <input type="url" name="URL" placeholder="Ex: https://www.google.com" value="<?= @ htmlentities($_POST['URL']) ?>">
       </div>
     </div>
   </form>
@@ -189,3 +189,6 @@
 
 </body>
 </html>
+
+
+
