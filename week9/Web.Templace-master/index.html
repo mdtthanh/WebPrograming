@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3.Templace</title>
+    <title>Music Tour</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -38,13 +38,6 @@
 
             <!-- END: nav-->
 
-        </div>
-
-        <div id="slide">
-            <div class="text-content">
-                <div class="text-heading">New York</div>
-                <div class="text-des">The atmosphere in New York is lorem ipsum.</div>
-            </div>
         </div>
 
         <div id="content">
@@ -118,164 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="contact" class="content-section">
-                    <h2 class="section-heading">CONTACT</h2>
-                    <p class="section-sub">Fan? Drop a note!</p>
-                   
-                    <div class="row contact-content">
-                        <div class="contact-info">
-                            <div class="col col-half">
-                                <p><i class="ti-location-pin">
-                                    Chicago, US
-                                </i></p>                                
-                                <p><i class="ti-mobile"> 
-                                    Phone: <a href="tel:+84 828768112">+84 828768112</a> 
-                                </i></p>                                
-                                <p><i class="ti-email">
-                                    Email: <a href="mailto:maithanh0131@email.com">maithanh0131@email.com</a> 
-                                </i></p>
-                            </div>
-                            <div class="col col-half contact-form">
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col col-half contact-name">
-                                            <input type="text" name="" class="form-control" placeholder="Name" required id="">
-                                        </div>
-                                        <div class="col col-half">
-                                            <input type="email" name="" class="form-control "  placeholder="Email" required id="">              
-                                        </div>
-                                    </div>
-                                    <div class="row mt-8">
-                                        <div class="col col-full ">
-                                            <input type="text" name="" class="form-control" placeholder="Message" required id="">
-                                        </div>
-                                    </div> 
-                                    <input type="submit" class="form-submit mt-16 s-full-width" value="SEND"></input>
-                                </form>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-section">
-                    <img src="./assets/img/image/map.jpg" alt="Map">
-                </div>
         </div>
-
-        <div id="footer">
-            <div class="social">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
-            </div>
-            <div>
-                <p class="copy-right">
-                    Powered by <a href="">w3.css</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal js-modal">
-        <div class="modal-container js-modal-container">
-                <div class="modal-close js-modal-close">
-                    <i class="ti-close"></i>
-                </div>
-
-                <header class="modal-header">
-                    <i class="ti-bag"></i>
-                    Tickets
-                </header>
-
-            <div class="modal-body">
-                <label for="miss" class="modal-label">
-                    <i class="ti-shopping-cart "></i>
-                         Tickets, $15 per person
-                </label>
-                <input type="text" id="miss" class="modal-input" placeholder="How many?">
-            </div>
-
-            <div class="modal-body">
-                <label for="miss2" class="modal-label">
-                    <i class="ti-user"></i>
-                        Send To
-                </label>
-                <input type="email" id="miss2" class="modal-input" placeholder="Enter email...">
-                
-                <button id="buy-tickets">
-                    Pay <i class="ti-check"></i>
-                </button>
-            </div>
-
-            <footer class="modal-footer">
-                <p class="modal-help">Need <a href="#" class="">help?</a></p>
-            </footer>
-        </div>
-    </div>
-
-<!--Js-->
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalClose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-
-        function hideBuyTickets() {
-            modal.classList.remove('open')
-        }
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-
-        modalClose.addEventListener('click', hideBuyTickets)
-        modal.addEventListener('click', hideBuyTickets)
-        modalContainer.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
-    </script>
-    <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('menu');
-        var headerHeight = header.clientHeight;
-
-        // Đóng/ Mở mobile menu
-        mobileMenu.onclick = function() {
-            var isClosed =header.clientHeight === headerHeight;
-            if (isClosed) {
-                header.style.height ='auto';   
-            } else {
-                header.style.height =null;
-            }
-        }
-        // Khai báo biến header/ mobile/ headerHeight
-        // Đóng/ Mở mobile menu
-        // Khi click vào mobileMenu thì sẽ chạy hàm như sau: 
-            // Khai báo biến isclosed = header.clientHeight bằng với headerHeight (biến True False);
-            // Nếu biến isClosed đúng thì header.style.height ='auto' --> sổ ra 
-            // Nếu biến isClosed sai thì header.style.height = null --> đóng vào 
-
-        // Tự động đóng khi chọn menu\
-        var menuItems =document.querySelectorAll('#nav li a[href*="#"]');
-        for (i=0; i<menuItems.length;i++) {
-            var menuItem = menuItems[i];
-            menuItem.onclick =function() {
-                header.style.height =null;
-            }
-        }
-
-        //Khai báo biến menuItems là các thẻ nav li a có chứa dấu #
-        // Chạy vòng lặp for (khai báo biến i=0; nếu i nhỏ hơn số lượng MenuItems; tăng i lên 1) Nếu i thỏa mãn chạy: 
-            // Khai báo biến tạm menuItem = truyền giá trị của menuItems vị trí i vào;
-            // Khi click vào menuItem chạy hàm 
-               //header.style.height =null; --> giấu thanh đi 
-
-
-    </script>
 
 </body>
 </html>
