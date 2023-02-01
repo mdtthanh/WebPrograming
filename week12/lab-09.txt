@@ -1,0 +1,2 @@
+1. Viết DTD và XML Scheme tương ứng cho file books.xml
+2. Viết code bằng PHP để đọc file books.xml và in ra tiêu đề các sách của tác giả O'Brien, Tim
